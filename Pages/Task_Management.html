@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Managment</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Task Managment</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Task List
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Task 1
+                                <div>
+                                    <button class="btn btn-sm btn-info"><a href="Edit_task.html">Edit</a></button>
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Task 2
+                                <div>
+                                    <button class="btn btn-sm btn-info"><a href="Edit_task.html">Edit</a></button>
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Add/Edit Task
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="taskTitle">Task Title</label>
+                                    <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskDescription">Description</label>
+                                    <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dueDate">Due Date</label>
+                                    <input type="date" class="form-control" id="dueDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select class="form-control" id="status">
+                                        <option>Not Started</option>
+                                        <option>In Progress</option>
+                                        <option>Completed</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Save Task</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2023 Task Management:
+            <a class="text-dark" href="#">www.task_managment_system.com</a>
+        </div>
+    </footer>
+    
+</html>
+
+
+
